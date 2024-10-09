@@ -1,8 +1,7 @@
-import java.io.IOException;
+import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.io.*;
-import java.net.*;
+import java.util.Scanner;
 
 public class TCPClient {
 	public static void main(String[] args) throws IOException{
@@ -14,8 +13,13 @@ public class TCPClient {
 		DataInputStream dataIn = new DataInputStream(socket.getInputStream());
 		DataOutputStream dataOut = new DataOutputStream(socket.getOutputStream());
 		
-		int a = 5;
-		int b = 7;
+        
+        Scanner i = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+		int a = i.nextInt();
+        System.out.print("Enter second number: ");
+		int b = i.nextInt();
 		
         // Send the numbers to the server
 		dataOut.writeInt(a);
