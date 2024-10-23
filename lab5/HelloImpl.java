@@ -27,7 +27,7 @@ public class HelloImpl extends UnicastRemoteObject implements Hello {
     }
 
     @Override
-    public int divide(int a, int b) throws RemoteException {
+    public float divide(int a, int b) throws RemoteException {
         if (b == 0) {
             throw new RemoteException("Division by zero");
         }

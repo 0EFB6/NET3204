@@ -6,5 +6,5 @@ public interface Hello extends Remote {
     int sum(int a, int b) throws RemoteException;
     int subtract(int a, int b) throws RemoteException;
     int multiply(int a, int b) throws RemoteException;
-    int divide(int a, int b) throws RemoteException;
+    float divide(int a, int b) throws RemoteException;
 }
