@@ -11,7 +11,12 @@ public class Main {
         mercedes.brake();
         honda.brake();
         bmw.brake();
+        System.out.println("\n ---Merz--- ");
         ((Merz) mercedes).map();
+        ((Merz) mercedes).honk();
+        System.out.println("\n ---BMW--- ");
         ((Honda) honda).spec();
+        System.out.println("\n ---Honda--- ");
+        ((Honda) honda).map();
     }
 }

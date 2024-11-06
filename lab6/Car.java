@@ -48,6 +48,10 @@ public class Car {
         System.out.println("Car can brake");
     }
 
+    public void start() {
+        System.out.println("Car started!");
+    }
+
     @Override
     public String toString() {
         return "Car [brand=" + brand + ", model=" + model + ", year=" + year + ", color=" + color + "]";
